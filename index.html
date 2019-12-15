@@ -1,33 +1,388 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!-- 
+Theme by Mashiro
+                      /^--^\     /^--^\     /^--^\
+                      \____/     \____/     \____/
+                     /      \   /      \   /      \
+                    |        | |        | |        |
+                     \__  __/   \__  __/   \__  __/
+|^|^|^|^|^|^|^|^|^|^|^|^\ \^|^|^|^/ /^|^|^|^|^\ \^|^|^|^|^|^|^|^|^|^|^|^|
+| | | | | | | | | | | | |\ \| | |/ /| | | | | | \ \ | | | | | | | | | | |
+########################/ /######\ \###########/ /#######################
+| | | | | | | | | | | | \/| | | | \/| | | | | |\/ | | | | | | | | | | | |
+|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
+
+-->
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>神代白羽</title>
-<link href="file:///E|/idm下载/css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title itemprop="name">神代白羽的庭园 - 神代白羽的庭园</title>
+<link rel="shortcut icon" href=""/> 
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='saukra_css-css'  href='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.2/style.min.css?ver=3.3.2' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='http://111.229.128.135/index.php/wp-json/' />
+<style type="text/css">
+.site-top .lower nav {display: block !important;}
+.author-profile i , .post-like a , .post-share .show-share , .sub-text , .we-info a , span.sitename , .post-more i:hover , #pagination a:hover , .post-content a:hover , .float-content i:hover{ color: #1e73be }
+.feature i , /*.feature-title span ,*/ .download , .navigator i:hover , .links ul li:before , .ar-time i , span.ar-circle , .object , .comment .comment-reply-link , .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after { background: #1e73be }
+::-webkit-scrollbar-thumb { background: #1e73be }
+.download , .navigator i:hover , .link-title , .links ul li:hover , #pagination a:hover , .comment-respond input[type='submit']:hover { border-color: #1e73be }
+.entry-content a:hover , .site-info a:hover , .comment h4 a , #comments-navi a.prev , #comments-navi a.next , .comment h4 a:hover , .site-top ul li a:hover , .entry-title a:hover , #archives-temp h3 , span.page-numbers.current , .sorry li a:hover , .site-title a:hover , i.iconfont.js-toggle-search.iconsearch:hover , .comment-respond input[type='submit']:hover, blockquote:before, blockquote:after { color: #1e73be }
+
+#aplayer-float .aplayer-lrc-current { color: #1e73be !important}
+
+.is-active-link::before, .commentbody:not(:placeholder-shown)~.input-label, .commentbody:focus~.input-label {
+    background-color: #1e73be !important
+}
+
+.commentbody:focus {
+    border-color: #1e73be !important
+}
+
+.insert-image-tips:hover, .insert-image-tips-hover{ 
+    color: #1e73be;
+    border: 1px solid #1e73be}
+
+.site-top ul li a:after {
+    background-color: #1e73be}
+
+.scrollbar,.butterBar-message {
+    background: #1e73be !important
+}
+
+#nprogress .spinner-icon{ 
+    border-top-color: #1e73be; 
+    border-left-color: #1e73be}
+
+#nprogress .bar {
+    background: #1e73be}
+
+.changeSkin-gear,.toc{
+    background:rgba(255,255,255,0.8);
+}
+
+.entry-content th {
+    background-color: #1e73be}
+
+.comments .comments-main {display:block !important;}
+.comments .comments-hidden {display:none !important;}
+.centerbg{background-image: url("http://111.229.128.135/wp-content/themes/Sakura/cover/index.php");background-position: center center;background-attachment: inherit;}
+.rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
+</style>
+<script>
+/*Initial Variables*/
+var mashiro_option = new Object();
+var mashiro_global = new Object();
+mashiro_option.NProgressON = false;
+mashiro_option.email_domain = "qq.com";
+mashiro_option.email_name = "1600986368";
+mashiro_option.cookie_version_control = "";
+mashiro_option.qzone_autocomplete = false;
+mashiro_option.site_name = "神代白羽的庭园";
+mashiro_option.author_name = "神代白羽";
+mashiro_option.template_url = "http://111.229.128.135/wp-content/themes/Sakura";
+mashiro_option.site_url = "http://111.229.128.135";
+mashiro_option.qq_api_url = "https://api.2heng.xin/qqinfo/"; 
+mashiro_option.qq_avatar_api_url = "https://api.2heng.xin/qqinfo/";
+mashiro_option.live_search = false;
+
+mashiro_option.skin_bg0 = "none";
+mashiro_option.skin_bg1 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/sakura.png";
+mashiro_option.skin_bg2 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/plaid2dbf8.jpg";
+mashiro_option.skin_bg3 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/star02.png";
+mashiro_option.skin_bg4 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/kyotoanimation.png";
+mashiro_option.skin_bg5 = "https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/dot_orange.gif";
+mashiro_option.skin_bg6 = "https://api.mashiro.top/bing/";
+mashiro_option.skin_bg7 = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sites/api-index/images/me.png";
+
+mashiro_option.land_at_home = true;
+
+mashiro_option.baguetteBoxON = false;
+
+mashiro_option.clipboardCopyright = true;
+
+mashiro_option.entry_content_theme_src = "http://111.229.128.135/wp-content/themes/Sakura/cdn/theme/sakura.css?3.3.2";
+mashiro_option.entry_content_theme = "sakura";
+
+mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.2/cdn/css/lib.min.css";
+mashiro_option.float_player_on = true;
+
+mashiro_option.cover_api = "http://111.229.128.135/wp-content/themes/Sakura/cover/index.php";
+
+/*End of Initial Variables*/
+</script>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("http://111.229.128.135/wp-content/uploads/2019/12/08-56-37-Konachan.com-231783-boots-building-city-forest-key-long_hair-scenic-seifuku-skirt-tagme_artist-tagme_character-tree-water-white_hair.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+<link rel="icon" href="http://111.229.128.135/wp-content/uploads/2019/12/cropped-yande.re2037256220sample20kei_28k_tmr2920uchi_no_musume_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai.-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://111.229.128.135/wp-content/uploads/2019/12/cropped-yande.re2037256220sample20kei_28k_tmr2920uchi_no_musume_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai.-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://111.229.128.135/wp-content/uploads/2019/12/cropped-yande.re2037256220sample20kei_28k_tmr2920uchi_no_musume_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai.-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://111.229.128.135/wp-content/uploads/2019/12/cropped-yande.re2037256220sample20kei_28k_tmr2920uchi_no_musume_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai.-270x270.jpg" />
+<script type="text/javascript">
+if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+  alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
+}
+</script>
 </head>
-<body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Header -->
-  <header class="header">
-    <h4 class="logo"><a href="https://space.bilibili.com/8400379">神代白羽</a></h4>
-  </header>
-  <!-- Hero Section -->
-  <section class="intro">
-    <div class="column">
-      <h3><a href="https://space.bilibili.com/8400379">神代白羽</a></h3>
+<body class="home blog custom-background hfeed chinese-font">
+        		<div class="scrollbar" id="bar"></div>
+	<section id="main-container">
+				<div class="headertop filter-undertint">
+			<figure id="centerbg" class="centerbg">
+	<div class="focusinfo">
+        	     <div class="header-tou"><a href="http://111.229.128.135" ><img src="http://111.229.128.135/wp-content/uploads/2019/12/yande.re2037256220sample20kei_28k_tmr2920uchi_no_musume_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai..jpg"></a></div>
+	  			<div class="header-info">
+            <p>缘，妙不可言。</p>
+                        <div class="top-social_v2">
+                <li id="bg-pre"><img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>
+                	
+                                	
+                                <li class="qq"><a href="tencent://message/?uin=1600986368" title="Initiate chat ?"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/qq.png"/></a></li>
+                	
+                                 
+                	
+                                <li><a href="https://space.bilibili.com/8400379" target="_blank" class="social-bili" title="bilibili"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/bilibili.png"/></a></li>
+                                                                	
+                	
+                                                	
+                		
+                                <li><a onclick="mail_me()" class="social-wangyiyun" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg"/></a></li>
+                	
+                <li id="bg-next"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>	
+            </div>
+                    </div>
+        	</div>
+	</figure>
+<div id="video-container" style="display:none;"><video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto"></video><div id="video-btn" class="loadvideo videolive"></div><div id="video-add"></div><div class="video-stu"></div></div>		</div>	
+				<div id="page" class="site wrapper">
+			<header class="site-header no-select" role="banner">
+				<div class="site-top">
+					<div class="site-branding">
+												<span class="site-title">
+							<span class="logolink serif">
+								<a href="http://111.229.128.135">
+									<span class="site-name">神代白羽的庭园</span>
+								</a>
+							</span>
+						</span>	
+						<!-- logo end -->
+					</div><!-- .site-branding -->
+					  <div class="header-user-avatar">
+    <a href="http://111.229.128.135/wp-login.php">
+      <img class="faa-shake animated-hover" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/none.png" width="30" height="30">
+    </a>
+    <div class="header-user-menu">
+      <div class="herder-user-name no-logged">Whether to <a href="http://111.229.128.135/wp-login.php" target="_blank" style="color:#333;font-weight:bold;text-decoration:none">log in</a> now?
+      </div>
     </div>
-    <div class="column">
-      <p><a href="https://space.bilibili.com/8400379">没有什么好说的，本网站仅测试一下。</a></p>
+  </div>
+  					<div class="searchbox"><i class="iconfont js-toggle-search iconsearch icon-search"></i></div>
+										<div class="lower">						<nav><ul id="menu-menu-1" class="menu"><li class="current-menu-item"><a href="http://111.229.128.135/">首页</a></li>
+<li><a href="https://space.bilibili.com/8400379">B站</a></li>
+<li><a href="http://111.229.128.135/index.php/%e5%85%b3%e4%ba%8e/">关于</a></li>
+</ul></nav><!-- #site-navigation -->
+					</div>	
+				</div>
+			</header><!-- #masthead -->
+			<div class="blank"></div>		    <div id="content" class="site-content">
+   
+   	
+	<div class="top-feature-row">
+    <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-anchor" aria-hidden="true"></i> Discovery</h1>
+    <div class="top-feature-v2">
+        <div class="the-feature square from_left_and_right">
+            <a href="https://space.bilibili.com/8400379" target="_blank">
+                <div class="img"><img src="http://111.229.128.135/wp-content/themes/Sakura/images//temp.png"></div>
+                <div class="info">
+                    <h3>B站</h3>
+                    <p>个人B站空间</p>
+                </div>
+            </a>
+        </div>
     </div>
-  </section>
-  <!-- Stats Gallery Section -->
- 
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2019 - <strong>jindaishiroha</strong></div>
+    <div class="top-feature-v2">
+        <div class="the-feature square from_left_and_right" style="margin: 0 4.5px">
+            <a href="#" target="_blank">
+                <div class="img"><img src="http://111.229.128.135/wp-content/themes/Sakura/images//temp.png"></div>
+                <div class="info">
+                    <h3>feature2</h3>
+                    <p>Description goes here 2</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="top-feature-v2">
+        <div class="the-feature square from_left_and_right">
+            <a href="#" target="_blank">
+                <div class="img"><img src="http://111.229.128.135/wp-content/themes/Sakura/images//temp.png"></div>
+                <div class="info">
+                    <h3>feature3</h3>
+                    <p>Description goes here 3</p>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
-<!-- Main Container Ends -->
+	
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">	
+		<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-envira" aria-hidden="true"></i> Discovery</h1>
+			<article class="post post-list-thumb " itemscope="" itemtype="http://schema.org/BlogPosting">
+		<div class="post-thumb">
+			<a href="http://111.229.128.135/index.php/2019/12/12/hello-world/"><img class="lazyload" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/orange.progress-bar-stripe-loader.svg" data-src="http://111.229.128.135/wp-content/uploads/2019/12/22-04-24-yande.re-431894-azur_lane-kotohira_akina-shoukaku_azur_lane-1024x576.png"></a>
+		</div><!-- thumbnail-->
+		<div class="post-content-wrap">
+			<div class="post-content">
+				<div class="post-date">
+					<i class="iconfont icon-time"></i>发布于 2 天前									</div>
+				<a href="http://111.229.128.135/index.php/2019/12/12/hello-world/" class="post-title"><h3>世界，您好！</h3></a>
+				<div class="post-meta">
+					<span><i class="iconfont icon-attention"></i>13 热度</span>
+					<span class="comments-number"><i class="iconfont icon-mark"></i><a href="http://111.229.128.135/index.php/2019/12/12/hello-world/#respond">NOTHING</a></span>
+					<span><i class="iconfont icon-file"></i><a href="http://111.229.128.135/uncategorized/">未分类</a>
+					</span>
+				</div>
+				<div class="float-content">
+					<p>暂时建好，后续有时间完善。</p>
+					<div class="post-bottom">
+						<a href="http://111.229.128.135/index.php/2019/12/12/hello-world/" class="button-normal"><i class="iconfont icon-caidan"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+				</main><!-- #main -->
+				<div id="pagination"></div>
+		<div id="add_post"><span id="add_post_time" style="visibility: hidden;" title="233"  ></span></div>
+			</div><!-- #primary -->
+	</div><!-- #content -->
+		</div><!-- #page Pjax container-->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info" theme-info="Sakura v3.3.2">
+			<div class="footertext">
+				<div class="img-preload">
+					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
+					<img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg">
+				</div>
+				<p style="color: #666666;">Copyright &copy; by jindaishiroha All Rights Reserved.</p>
+			</div>
+			<div class="footer-device">
+			<p style="font-family: 'Ubuntu', sans-serif;">
+					<span style="color: #b9b9b9;">
+												Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
+					</span>
+				</p>
+			</div>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+	<div class="openNav no-select">
+		<div class="iconflat no-select">	 
+			<div class="icon"></div>
+		</div>
+		<div class="site-branding">
+						<h1 class="site-title"><a href="http://111.229.128.135" >神代白羽的庭园</a></h1>
+					</div>
+	</div><!-- m-nav-bar -->
+	</section><!-- #section -->
+	<!-- m-nav-center -->
+	<div id="mo-nav">
+		<div class="m-avatar">
+						<img src="http://111.229.128.135/wp-content/uploads/2019/12/yande.re2037256220sample20kei_28k_tmr2920uchi_no_musume_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai..jpg">
+		</div>
+		<div class="m-search">
+			<form class="m-search-form" method="get" action="http://111.229.128.135" role="search">
+				<input class="m-search-input" type="search" name="s" placeholder="搜索..." required>
+			</form>
+		</div>
+		<ul id="menu-menu-2" class="menu"><li class="current-menu-item"><a href="http://111.229.128.135/">首页</a></li>
+<li><a href="https://space.bilibili.com/8400379">B站</a></li>
+<li><a href="http://111.229.128.135/index.php/%e5%85%b3%e4%ba%8e/">关于</a></li>
+</ul>	</div><!-- m-nav-center end -->
+	<a class="cd-top faa-float animated "></a>
+	<button onclick="topFunction()" id="moblieGoTop" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+	<!-- search start -->
+	<form class="js-search search-form search-form--modal" method="get" action="http://111.229.128.135" role="search">
+		<div class="search-form__inner">
+					<div class="micro">
+				<p class="micro mb-">想要找点什么呢？</p>
+				<i class="iconfont icon-search"></i>
+				<input class="text-input" type="search" name="s" placeholder="搜索" required>
+			</div>
+				</div>
+		<div class="search_close"></div>
+	</form>
+	<!-- search end -->
+<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.2/cdn/js/lib.min.js?ver=3.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Poi = {"pjax":"","movies":"close","windowheight":"auto","codelamp":"close","ajaxurl":"http:\/\/111.229.128.135\/wp-admin\/admin-ajax.php","order":"asc","formpostion":"bottom","reply_link_version":"old","api":"http:\/\/111.229.128.135\/index.php\/wp-json\/","nonce":"d0983d1e1d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.3.2/js/sakura-app.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/github-cards/latest/widget.js?ver=3.3.2'></script>
+<script type='text/javascript' src='http://111.229.128.135/wp-includes/js/wp-embed.min.js?ver=4.7.16'></script>
+<div class="changeSkin-gear no-select" style="bottom: -999px;">
+    <div class="keys">
+        <span id="open-skinMenu">
+		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL 
+        </span>
+    </div>
+</div>
+<div class="skin-menu no-select">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg">
+                <i class="fa fa-television" aria-hidden="true"></i>
+            </li><!--Default-->
+            <li id="sakura-bg">
+                <i class="iconfont icon-sakura"></i>
+            </li><!--Sakura-->
+            <li id="gribs-bg">
+                <i class="fa fa-slack" aria-hidden="true"></i>
+            </li><!--Grids-->
+            <li id="KAdots-bg">
+                <i class="iconfont icon-dots"></i>
+            </li><!--Dots-->
+            <li id="totem-bg">
+                <i class="fa fa-superpowers" aria-hidden="true"></i>
+            </li><!--Orange-->
+            <li id="pixiv-bg">
+                <i class="iconfont icon-pixiv"></i>
+            </li><!--Start-->
+            <li id="bing-bg">
+                <i class="iconfont icon-bing"></i>
+            </li><!--Bing-->
+            <li id="dark-bg">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </li><!--Night-->
+        </ul>
+    </div>
+    <div class="font-family-controls row-container">
+        <button type="button" class="control-btn-serif selected" data-mode="serif" 
+                onclick="mashiro_global.font_control.change_font()">Serif</button>
+        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" 
+                onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+    <div id="aplayer-float" style="z-index: 100;"
+	    class="aplayer"
+        data-id="3115762548"
+        data-server="netease"
+        data-type="playlist"
+        data-fixed="true"
+        data-theme="orange">
+    </div>
+    <style>.skin-menu{left:auto;right:10px;}.changeSkin-gear{left:auto;right:5px;}</style>
 </body>
 </html>
